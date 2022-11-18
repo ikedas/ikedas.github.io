@@ -316,3 +316,11 @@ $(function() {
 });
 
 /* Experimental: Add icons */
+$(function() {
+    $(".doc blockquote > p > strong:contains('Note')").each(function(){
+        $(this).prepend('<i class="fa fa-info-circle"></i>');
+    });
+    $(".doc blockquote > p > strong:contains('Warning')").each(function(){
+        $(this).prepend('<i class="fa fa-exclamation-triangle"></i>');
+    });
+});
