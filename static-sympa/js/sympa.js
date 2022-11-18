@@ -318,9 +318,11 @@ $(function() {
 /* Experimental: Add icons */
 $(function() {
     $(".doc blockquote > p > strong:contains('Note')").each(function(){
-        $(this).prepend('<i class="fa fa-info-circle fa-2x"></i> ');
+        $(this).prepend('<i class="fa fa-info-circle fa-lg"></i> ');
+	$(this).css('color', '#0969da');
     });
     $(".doc blockquote > p > strong:contains('Warning')").each(function(){
-        $(this).prepend('<i class="fa fa-exclamation-triangle fa-2x"></i> ');
+        $(this).prepend('<i class="fa fa-exclamation-triangle fa-lg"></i> ');
+	$(this).css('color', '#9a6700');
     });
 });
