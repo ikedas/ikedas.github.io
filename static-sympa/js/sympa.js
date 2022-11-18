@@ -320,9 +320,11 @@ $(function() {
     $(".doc blockquote > p > strong:contains('Note')").each(function(){
         $(this).prepend('<i class="fa fa-info-circle fa-lg"></i> ');
 	$(this).css('color', '#0969da');
+	$(this).parent().css('background-color', '#84B4EC');
     });
     $(".doc blockquote > p > strong:contains('Warning')").each(function(){
         $(this).prepend('<i class="fa fa-exclamation-triangle fa-lg"></i> ');
 	$(this).css('color', '#9a6700');
+	$(this).parent().css('background-color', '#CD337F');
     });
 });
